@@ -9,8 +9,6 @@ import UIKit
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    
-    
     @IBOutlet weak var tableView: UITableView!
     
     // properties
@@ -19,6 +17,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        tableView.dataSource = self
+        tableView.delegate = self
         
         print("hello!")
         
@@ -46,13 +47,19 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // end network request snippet
     }
     
-    // protocol stub
+    // protocol stub - number of rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 50
     }
-    // protocol stub
+    // protocol stub - display the rows
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        // get cell for particular row
+        let cell = UITableViewCell()
+        
+        // print indexPath. Note syntax "\(variable)"
+        cell.textLabel!.text = "row: \(indexPath.row)"
+        
+        return cell
     }
 
 }
