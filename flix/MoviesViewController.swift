@@ -67,9 +67,14 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // get poster of movie. baseUrl is defined in themoviedb documentation
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
-        let posterUrl = URL(string: baseUrl + posterPath)
-        // display poster
-        cell.posterView.af.setImage(withURL: posterUrl!)
+        if let posterUrl = URL(string: baseUrl + posterPath) {
+            // display poster
+            cell.posterView.af.setImage(withURL: posterUrl)
+        }
+        else {
+            // if no poster is available
+            cell.posterView.image = nil
+        }
         
         return cell
     }
