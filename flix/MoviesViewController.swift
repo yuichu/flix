@@ -33,6 +33,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                     
                     // access key results from API and store to movies property
                     self.movies = dataDictionary["results"] as! [[String:Any]]
+                 
+                    // update data
+                    self.tableView.reloadData()
              }
         }
         task.resume()
