@@ -7,7 +7,9 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController {
+class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -42,11 +44,16 @@ class MoviesViewController: UIViewController {
         }
         task.resume()
         // end network request snippet
-
-
-
     }
-
+    
+    // protocol stub
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    // protocol stub
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
 
 }
 
