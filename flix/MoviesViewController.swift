@@ -48,16 +48,21 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     // protocol stub - display the rows
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // create cell for particular row
-        let cell = UITableViewCell()
+        // create cell. Note: casted as MovieCell class
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
         
         // get current movie per API results index
         let movie = movies[indexPath.row]
         // get title of movie (cast to string)
         let title = movie["title"] as! String
+        // get synopsis of movie
+        let synopsis = movie["overview"] as! String
         
         // display title in cell
-        cell.textLabel!.text = title
+        cell.titleLabel.text = title
+        // display synopsis
+        cell.synopsisLabel.text = synopsis
+        
         
         return cell
     }
