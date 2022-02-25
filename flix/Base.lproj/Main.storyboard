@@ -51,7 +51,6 @@
                                         <connections>
                                             <outlet property="posterView" destination="Dbp-Ox-OPY" id="Jd4-GN-J7o"/>
                                             <outlet property="synopsisLabel" destination="2kp-DD-Yeu" id="lez-X6-rZ5"/>
-                                            <outlet property="title" destination="AUC-t1-x54" id="m7L-dL-CgB"/>
                                             <outlet property="titleLabel" destination="AUC-t1-x54" id="NZY-kf-NC7"/>
                                         </connections>
                                     </tableViewCell>
