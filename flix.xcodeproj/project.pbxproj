@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0A814E27C87524007F90DA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A814D27C87524007F90DA /* MovieCell.swift */; };
 		6A2D987727C722E70097E8D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D987627C722E70097E8D3 /* AppDelegate.swift */; };
 		6A2D987927C722E70097E8D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D987827C722E70097E8D3 /* SceneDelegate.swift */; };
 		6A2D987B27C722E70097E8D3 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D987A27C722E70097E8D3 /* MoviesViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A0A814D27C87524007F90DA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		6A2D987327C722E70097E8D3 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D987627C722E70097E8D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A2D987827C722E70097E8D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				6A2D987827C722E70097E8D3 /* SceneDelegate.swift */,
 				6A2D987A27C722E70097E8D3 /* MoviesViewController.swift */,
 				6A2D987C27C722E70097E8D3 /* Main.storyboard */,
+				6A0A814D27C87524007F90DA /* MovieCell.swift */,
 				6A2D987F27C722E90097E8D3 /* Assets.xcassets */,
 				6A2D988127C722E90097E8D3 /* LaunchScreen.storyboard */,
 				6A2D988427C722E90097E8D3 /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				6A2D987B27C722E70097E8D3 /* MoviesViewController.swift in Sources */,
 				6A2D987727C722E70097E8D3 /* AppDelegate.swift in Sources */,
+				6A0A814E27C87524007F90DA /* MovieCell.swift in Sources */,
 				6A2D987927C722E70097E8D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
